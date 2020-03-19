@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Twit</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        EXERCICE JAVASCRIPT #2
+    </header>
+    <section>
+        <h1>Faire un live Twit</h1>
+        <p>
+            Consigne: Créer un input pour écrire un twit et qu'il soit visible en direct avec un compteur de
+            caractère restant.
+        </p>
+
+        <form>
+            <div class="twit">
+                <div>
+                    <label>Je rédige mon twit ici:</label><br>
+                    <input type="text" id="input"></input><br>
+                </div>
+                <div>
+                    <label>Suivez en live mon twit :</label>
+                    <p id="result"></p>
+                </div>
+            </div>
+            <small>Caractères restants: <span id="count"> </span></small>
+        </form>
+
+
+        <div>
+            <h2>ASTUCES</h2>
+            <button onclick=displayTips()>CLIQUEZ ICI POUR AVOIR DE L'AIDE</button>
+            <div id="tips">
+                <h4> Pour faire la mise en place de cette fonction, vous devrez utiliser plusieurs méthodes:</h4>
+                <ul>
+                    <li>L'event <a target="_blank"
+                            href="https://developer.mozilla.org/en-US/docs/Web/API/Document/keyup_event">KEYUP</a>
+                    </li>
+                    <li>La propriété <a target="_blank"
+                            href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/String/length">LENGTH</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        Fait avec ❤️ & 🩸- ARINFO | I-Maginer - 2020
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        const displayTips = () => {
+            document.getElementById('tips').style.display = 'block'
+        }
+    </script>
+</body>
+
+</html>

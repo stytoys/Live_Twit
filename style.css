@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+body{
+    background: #e3f6f5;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Muli', sans-serif;
+}
+
+header{
+    background: #272343;
+    padding: 20px;
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: #bae8e8;
+}
+section{
+    width: 80%;
+    margin: auto;
+    min-height: 800px;
+}
+.twit{
+    display: flex;
+}
+.twit input,p{
+  margin-top: 20px;
+  margin-right: 30px;
+}
+
+button{
+    background: #ffd803;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    outline: none;
+}
+button:hover{
+    background: #ffe031;
+}
+#result{
+    padding: 10px 20px;
+    width: 550px;
+    height: 20px;
+    border: solid black 1px;
+}
+#tips{
+    display: none;
+}
+footer{
+    text-align: center;
+    background: #272343;
+    padding: 35px;
+    color: #bae8e8;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
